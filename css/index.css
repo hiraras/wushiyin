@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#show {
+    color: red;
+    font-weight: bold;
+    font-size: 180px;
+    text-align: center;
+}
+#msg {
+    margin-top: 50px;
+    color: red;
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+}
+.active {
+    opacity: 0;
+}
+.btnContainer{
+    margin-top: 16px;
+    text-align: center;
+}
+.btn {
+    border: none;
+    width: 78px;
+    height: 32px;
+    background: #1890ff;
+    color: white;
+    margin-right: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
