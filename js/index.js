@@ -58,14 +58,13 @@ function changeCurrIndex(direct) {
 
 function createWord() {
     const word = wordList[currIndex];
-    const content = isNewFlag ? word.spell : word.spell + ' ' + word.pingjia + ' ' + word.pianjia;
+    const content = isNewFlag ? word.spell : word.spell + ' ' + word[PING_JIA] + ' ' + word[PIAN_JIA];
     show(content);
 }
 
 function show(content) {
     var showDom = document.getElementById('show');
     showDom.innerHTML = content;
-    toggleMsg();
 }
 
 (function() {
@@ -75,21 +74,8 @@ function show(content) {
     });
 })();
 
-function toggleMsg() {
-    const msgDom = document.getElementById('msg');
-    if (msgDom.classList.contains('active')) {
-        msgDom.classList.remove('active');
-    } else {
-        msgDom.classList.add('active');
-    }
-}
-
 function switchDirect(type) {
     // 修改查看方式: 0为顺序，1为随机
-    const msgDom = document.getElementById('msg');
-    if (msgDom.classList.contains('active')) {
-        msgDom.classList.remove('active');
-    }
     mode = +type;
     currIndex = mode === 0 ? 0 : getRandom(46);
     isNewFlag = true;
