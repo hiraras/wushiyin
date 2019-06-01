@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8" />
         <title>五十音</title>
         <link rel="stylesheet" href="./css/index.css" />
     </head>
@@ -10,10 +11,15 @@
             <button onclick="switchDirect(0)" class="btn">顺序</button>
             <button onclick="switchDirect(1)" class="btn">随机</button>
         </div>
+        <div class="wushiyin-contain">
+            <img src="./assets/images/wushiyin.jpg" class="wushiyin-img" />
+        </div>
+        <script src="./js/lib/jquery-1.9.1.min.js"></script>
         <script src="./js/constants.js"></script>
         <script src="./js/data.js"></script>
         <script src="./js/utils.js"></script>
         <script src="./js/common.js"></script>
+        <script src="./js/components/index.js" id="componentsIndex"></script>
         <script src="./js/index.js"></script>
     </body>
 </html>

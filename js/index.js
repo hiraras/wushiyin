@@ -72,6 +72,9 @@ function show(content) {
     keyDown({
         keyCode: 40,
     });
+    $('.wushiyin-img').on('click', function() {
+        WushiyinModal.info('./assets/images/wushiyin.jpg');
+    });
 })();
 
 function switchDirect(type) {
